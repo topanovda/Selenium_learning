@@ -9,7 +9,7 @@ chrome_options.add_argument("--window-size=1920,1080")
 
 service = Service(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
-link = "http://suninjuly.github.io/registration2.html"
+link = "http://suninjuly.github.io/registration1.html"
 
 
 try:
@@ -18,7 +18,9 @@ try:
 
     input1 = driver.find_element("xpath", "(//input[@class='form-control first'])[1]")
     input1.send_keys("Petrov")
-    input2 = driver.find_element("xpath", "//input[@placeholder='Input your last name']")
+    input2 = driver.find_element(
+        "xpath", "//input[@placeholder='Input your last name']"
+    )
     input2.send_keys("Ivan")
     input3 = driver.find_element("xpath", "//input[@placeholder='Input your email']")
     input3.send_keys("pwtrov@mail.ru")

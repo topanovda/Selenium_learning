@@ -19,26 +19,18 @@ class TestAbs(unittest.TestCase):
     def test_abs1(self):
         driver = webdriver.Chrome(service=service)
         driver.get(link1)
-        time.sleep(2)
         self.input1 = driver.find_element(
             "xpath", "(//input[@class='form-control first'])[1]"
         )
-        time.sleep(2)
-
         self.input1.send_keys("Petrov")
-        time.sleep(2)
-        # self.input2 = driver.find_element(
-        #     "xpath", "(//input[@class='form-control second'])[1]"
-        # )
-        # time.sleep(2)
-        # self.input2.send_keys("Ivan")
-        # time.sleep(2)
+        self.input2 = driver.find_element(
+            "xpath", "(//input[@class='form-control second'])[1]"
+        )
+        self.input2.send_keys("Ivan")
         self.input3 = driver.find_element(
             "xpath", "//input[@placeholder='Input your email']"
         )
-        time.sleep(2)
         self.input3.send_keys("pwtrov@mail.ru")
-        time.sleep(2)
         button = driver.find_element("xpath", "//button[@type='submit']").click()
         time.sleep(1)
 
@@ -47,39 +39,39 @@ class TestAbs(unittest.TestCase):
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         self.welcome_text = self.welcome_text_elt.text
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        # assert "Congratulations! You have successfully registered!" == welcome_text
-        self.assertEqual(
-            "Congratulations! You have successfully registered!" == self.welcome_text
-        )
+        assert "Congratulations! You have successfully registered!" == self.welcome_text
+        # self.assertEqual(
+        #     "Congratulations! You have successfully registered!" == self.welcome_text
+        # )
         driver.quit()
 
-    # def test_abs2(self):
-    #     driver = webdriver.Chrome(service=service)
-    #     driver.get(link2)
-    #     self.input1 = driver.find_element(
-    #         "xpath", "(//input[@class='form-control first'])[1]"
-    #     )
-    #     self.input1.send_keys("Petrov")
-    #     self.input2 = driver.find_element(
-    #         "xpath", "//input[@placeholder='Input your last name']"
-    #     )
-    #     self.input2.send_keys("Ivan")
-    #     self.input3 = driver.find_element(
-    #         "xpath", "//input[@placeholder='Input your email']"
-    #     )
-    #     self.input3.send_keys("pwtrov@mail.ru")
-    #     button = driver.find_element("xpath", "//button[@type='submit']").click()
-    #     time.sleep(1)
+    def test_abs2(self):
+        driver = webdriver.Chrome(service=service)
+        driver.get(link2)
+        self.input1 = driver.find_element(
+            "xpath", "(//input[@class='form-control first'])[1]"
+        )
+        self.input1.send_keys("Petrov")
+        self.input2 = driver.find_element(
+            "xpath", "//input[@placeholder='Input your last name']"
+        )
+        self.input2.send_keys("Ivan")
+        self.input3 = driver.find_element(
+            "xpath", "//input[@placeholder='Input your email']"
+        )
+        self.input3.send_keys("pwtrov@mail.ru")
+        button = driver.find_element("xpath", "//button[@type='submit']").click()
+        time.sleep(1)
 
-    #     # находим элемент, содержащий текст
-    #     self.welcome_text_elt = driver.find_element("tag name", "h1")
-    #     # записываем в переменную welcome_text текст из элемента welcome_text_elt
-    #     self.welcome_text = welcome_text_elt.text
-    #     # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-    #     # assert "Congratulations! You have successfully registered!" == welcome_text
-    #     self.assertEqual(
-    #         "Congratulations! You have successfully registered!" == self.welcome_text
-    #     )
+        # находим элемент, содержащий текст
+        self.welcome_text_elt = driver.find_element("tag name", "h1")
+        # записываем в переменную welcome_text текст из элемента welcome_text_elt
+        self.welcome_text = self.welcome_text_elt.text
+        # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
+        assert "Congratulations! You have successfully registered!" == self.welcome_text
+        # self.assertEqual(
+        #     "Congratulations! You have successfully registered!" == self.welcome_text
+        # )
 
 
 if __name__ == "__main__":
