@@ -13,8 +13,8 @@ driver = webdriver.Chrome(service=service)
 wait = WebDriverWait(driver, 20, poll_frequency=1)
 
 # Заданные значения email и пароля
-email = "hroft41@gmail.com"
-password = "LH7D54qLknR.bLZ"
+email = "***"
+password = "***"
 
 
 # Здесь создайте список URL-адресов, которые вы хотите посетить
