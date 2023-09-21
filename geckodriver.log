@@ -70,3 +70,31 @@ DevTools listening on ws://127.0.0.1:61560/devtools/browser/614094c8-a9ae-45fb-8
 JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
 1695046669401	Marionette	INFO	Stopped listening on port 61568
 Dynamically enable window occlusion 1
+1695303338987	geckodriver	INFO	Listening on 127.0.0.1:55570
+1695303339571	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TOPANO~1\\AppData\\Local\\Temp\\rust_mozprofileDBDsWN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695303340393	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695303340487	Marionette	INFO	Listening on port 55580
+WebDriver BiDi listening on ws://127.0.0.1:55571
+Read port: 55580
+1695303341153	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55571/devtools/browser/6c42e5a2-c31b-41a8-accb-6d3768bfbd6c
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1695303344528	Marionette	INFO	Stopped listening on port 55580
+Dynamically enable window occlusion 1
+1695305525448	geckodriver	INFO	Listening on 127.0.0.1:56962
+1695305525959	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56963" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TOPANO~1\\AppData\\Local\\Temp\\rust_mozprofilecBbJGc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695305526358	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695305526423	Marionette	INFO	Listening on port 56970
+WebDriver BiDi listening on ws://127.0.0.1:56963
+Read port: 56970
+1695305526622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56963/devtools/browser/c4d20405-679f-4268-92c6-11fe0bc155a4
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1695305529896	Marionette	INFO	Stopped listening on port 56970
+Dynamically enable window occlusion 1
